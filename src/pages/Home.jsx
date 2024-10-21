@@ -6,6 +6,7 @@ import List from '../components/List'
 import Banner2 from '../components/Banner2'
 import Instagram from '../components/Instagram'
 import List2 from '../components/List2'
+import Invited from '../components/Invited'
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
     <Banner2/>
     <Instagram/>
     <List2/>
+    <Invited/>
     </>
     
     
