@@ -2,8 +2,11 @@ import React from "react";
 
 function Card({ data }) {
   const { name, image, details } = data;
-
+ const color = data;
+ console.log(color);
+ 
   return (
+    
     <div className=" flex flex-col justify-between max-w-[400px] h-[404px] bg-gradient-to-t from-sky-100 to-transparent rounded-[30px] p-4 overflow-hidden cursor-pointer">
       <img src={image} alt="image1" className=" w-[368px] h-[250px] rounded-[30px] "/>
       <p className=" pl-2 text-2xl font-semibold">{name}</p>
