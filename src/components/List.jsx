@@ -3,7 +3,6 @@ import { useFoods } from "../context/FoodsContext";
 import Card from "./Card";
 function List() {
     const foods = useFoods();
-    console.log(foods);
     
   return (
     <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-24 mb-24">
