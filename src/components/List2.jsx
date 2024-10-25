@@ -8,8 +8,8 @@ import { Bars } from "react-loader-spinner";
 
 function List2() {
     const foods = useFoods();
-    console.log(foods);
-    const color = 'bg-transparent'
+    const newfoods = foods.slice(0,8);
+  
   return (
     <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-24 mb-24">
       <div className=" flex items-center justify-between w-full mb-20">
@@ -20,10 +20,11 @@ function List2() {
         </div>
       </div>
       <div className=" grid grid-cols-4">
-        { foods.length === 0 ? <div className=" col-span-full flex justify-center items-center"><Bars color="#0ea5e9"/></div>: foods.map(item=>(
+        { foods.length === 0 ? <div className=" col-span-full flex justify-center items-center"><Bars color="#0ea5e9"/></div>: newfoods.map(item=>(
             <Card2 data={item}/>
         ))}
       </div>
+      <div className=" w-full flex items-center justify-center"> <div className=" w-fit py-2 px-10 text-opacity-30 hover:bg-sky-100 rounded-xl mt-6 cursor-pointer bg-gray-300 bg-opacity-30">مشاهده همه</div></div>
     </div>
   );
 }

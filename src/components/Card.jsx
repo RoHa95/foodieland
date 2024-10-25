@@ -2,8 +2,8 @@ import React from "react";
 
 function Card({ data }) {
   const { name, image, details } = data;
- const color = data;
- console.log(color);
+ 
+
  
   return (
     
