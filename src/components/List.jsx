@@ -1,6 +1,11 @@
 import React from "react";
 import { useFoods } from "../context/FoodsContext";
+import {Link, Navigate, useNavigate} from "react-router-dom";
+
+// components
 import Card from "./Card";
+
+// images
 import ads from "../assets/images/Ads.png"
 
 // loader
@@ -12,6 +17,7 @@ function List() {
     const first = newfoods.slice(0,5);
     const last = newfoods.slice(5,8);
     console.log(newfoods);
+    const navigate = useNavigate();
     
   return (
     <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-24 mb-24">
@@ -36,7 +42,8 @@ function List() {
           ))
         }
       </div>
-      <div className=" w-full flex items-center justify-center"> <div className=" w-fit py-2 px-10 text-opacity-30 hover:bg-sky-100 rounded-xl mt-10 cursor-pointer bg-gray-300 bg-opacity-30">مشاهده همه</div></div>
+      <div className=" w-full flex items-center justify-center"> <div className=" w-fit py-2 px-10 text-opacity-30 hover:bg-sky-100 rounded-xl mt-10 cursor-pointer bg-gray-300 bg-opacity-30" onClick={()=> navigate("/foods")}
+      >مشاهده همه</div></div>
     </div>
   );
 }

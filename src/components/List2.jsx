@@ -5,11 +5,14 @@ import Card2 from "./Card2";
 
 // loader
 import { Bars } from "react-loader-spinner";
+import { useNavigate } from "react-router-dom";
 
 function List2() {
     const foods = useFoods();
     const newfoods = foods.slice(0,8);
   
+    const navigate = useNavigate();
+
   return (
     <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-24 mb-24">
       <div className=" flex items-center justify-between w-full mb-20">
@@ -24,7 +27,7 @@ function List2() {
             <Card2 data={item}/>
         ))}
       </div>
-      <div className=" w-full flex items-center justify-center"> <div className=" w-fit py-2 px-10 text-opacity-30 hover:bg-sky-100 rounded-xl mt-6 cursor-pointer bg-gray-300 bg-opacity-30">مشاهده همه</div></div>
+      <div className=" w-full flex items-center justify-center"> <div className=" w-fit py-2 px-10 text-opacity-30 hover:bg-sky-100 rounded-xl mt-6 cursor-pointer bg-gray-300 bg-opacity-30" onClick={()=> navigate("/foods")}>مشاهده همه</div></div>
     </div>
   );
 }
