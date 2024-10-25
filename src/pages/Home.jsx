@@ -7,6 +7,7 @@ import Banner2 from '../components/Banner2'
 import Instagram from '../components/Instagram'
 import List2 from '../components/List2'
 import Invited from '../components/Invited'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
     <Instagram/>
     <List2/>
     <Invited/>
+    <Footer/>
     </>
     
     

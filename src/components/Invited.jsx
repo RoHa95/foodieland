@@ -3,11 +3,11 @@ import bg from "../assets/images/invited.png";
 
 function Invited() {
   return (
-    <div className=" relative h-[442px] w-full flex justify-center items-center gap-x-10 mb-36">
+    <div className=" relative h-[442px] w-full container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-24 flex justify-center items-center gap-x-10 mb-36">
       <img
         src={bg}
         alt="background"
-        className=" absolute w-full top-0 right-0 -z-20"
+        className=" absolute w-full px-24 top-0 right-0 -z-20"
       />
       <div className=" flex h-full flex-col justify-between items-center py-20">
         <div className=" w-[620px] h-[282px]">
