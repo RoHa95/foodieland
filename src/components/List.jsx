@@ -1,6 +1,10 @@
 import React from "react";
 import { useFoods } from "../context/FoodsContext";
 import Card from "./Card";
+
+// loader
+import {Bars} from "react-loader-spinner";
+
 function List() {
     const foods = useFoods();
     
@@ -13,8 +17,9 @@ function List() {
           tempor incididunt ut labore et dolore magna aliqut enim ad minim{" "}
         </p>
       </div>
-      <div className=" w-full grid grid-cols-3 gap-x-5 gap-y-8">
-        {foods.map(item=>(
+      <div className=" w-full grid grid-cols-3 gap-x-5 gap-y-8 ">
+        {
+        foods.length === 0 ? <div className=" w-full flex col-span-full items-center justify-center"><Bars color="#0ea5e9"/></div> : foods.map(item=>(
             <Card data={item}/>
         ))}
       </div>

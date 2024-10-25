@@ -3,6 +3,9 @@ import { useFoods } from "../context/FoodsContext";
 import Card from "./Card";
 import Card2 from "./Card2";
 
+// loader
+import { Bars } from "react-loader-spinner";
+
 function List2() {
     const foods = useFoods();
     console.log(foods);
@@ -17,7 +20,7 @@ function List2() {
         </div>
       </div>
       <div className=" grid grid-cols-4">
-        {foods.map(item=>(
+        { foods.length === 0 ? <div className=" col-span-full flex justify-center items-center"><Bars color="#0ea5e9"/></div>: foods.map(item=>(
             <Card2 data={item}/>
         ))}
       </div>
