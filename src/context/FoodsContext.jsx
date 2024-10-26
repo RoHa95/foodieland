@@ -8,7 +8,7 @@ function FoodsProvider({ children }) {
   useEffect(() => {
     const fetchFoods = async () => {
       try {
-        const response = await api.get("/data")
+        const response = await api.get("/data");
         setFoods(response);
       } catch (error) {
         console.log(error.message);
@@ -26,6 +26,10 @@ const useFoods = () => {
   const foods = useContext(FoodsContext);
   return foods;
 };
-
+const useFoodDetails = (id) => {
+  const foods = useContext(FoodsContext);
+  const result = foods.find((item) => item.id === id);
+  return result;
+};
 export default FoodsProvider;
-export { useFoods };
+export { useFoods, useFoodDetails };

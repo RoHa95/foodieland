@@ -1,11 +1,13 @@
 import React from 'react'
+import { useNavigate, useParams } from 'react-router-dom';
 
 function Card2({data}) {
-    const { name, image, details } = data;
-    
+    const { id, name, image, details } = data;
+   
+    const navigate = useNavigate();
      return (
        
-       <div className=" flex flex-col justify-between max-w-[290px] h-[316px] bg-transparent rounded-[30px] p-4 overflow-hidden cursor-pointer">
+       <div onClick={()=>{ navigate(`/foods/${id}`)}} className=" flex flex-col justify-between max-w-[290px] h-[316px] bg-transparent rounded-[30px] p-4 overflow-hidden cursor-pointer">
          <img src={image} alt="image1" className=" w-[290px] h-[200px] rounded-[30px] "/>
          <p className=" pl-2 text-lg font-semibold">{name}</p>
          

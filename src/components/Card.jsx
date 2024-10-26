@@ -1,13 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Card({ data }) {
-  const { name, image, details } = data;
- 
+  const { id, name, image, details } = data;
+  const navigate = useNavigate();
 
  
   return (
     
-    <div className=" flex flex-col justify-between max-w-[400px] h-[404px] bg-gradient-to-t from-sky-100 to-transparent rounded-[30px] p-4 overflow-hidden cursor-pointer">
+    <div onClick={()=>{ navigate(`/foods/${id}`)}} className=" flex flex-col justify-between max-w-[400px] h-[404px] bg-gradient-to-t from-sky-100 to-transparent rounded-[30px] p-4 overflow-hidden cursor-pointer">
       <img src={image} alt="image1" className=" w-[368px] h-[250px] rounded-[30px] "/>
       <p className=" pl-2 text-2xl font-semibold">{name}</p>
       
