@@ -31,5 +31,10 @@ const useFoodDetails = (id) => {
   const result = foods.find((item) => item.id === id);
   return result;
 };
+const useCategoryList = (category)=>{
+  const foods = useContext(FoodsContext);
+  const result = foods.filter(item => item.details[1]["Recipe Type"] === category);
+  return result;
+}
 export default FoodsProvider;
-export { useFoods, useFoodDetails };
+export { useFoods, useFoodDetails , useCategoryList };
