@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-24">
@@ -27,10 +27,38 @@ function Footer() {
         </div>
         <div>
           <ul className="flex gap-x-10 font-medium text-base">
-            <li className=" hover:text-sky-500 cursor-pointer">About us</li>
-            <li className=" hover:text-sky-500 cursor-pointer">Contact</li>
-            <li className=" hover:text-sky-500 cursor-pointer">Blog</li>
-            <li className=" hover:text-sky-500 cursor-pointer">Recipes</li>
+            <li>
+              <Link
+                className="text-black  hover:text-sky-500 cursor-pointer"
+                to="/about"
+              >
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-black  hover:text-sky-500 cursor-pointer"
+                to="/contact"
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link
+                className=" text-black hover:text-sky-500 cursor-pointer"
+                to="/blogs"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                className=" text-black hover:text-sky-500 cursor-pointer"
+                to="/foods"
+              >
+                Recipes
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -47,7 +75,8 @@ function Footer() {
             height="22"
             viewBox="0 0 23 22"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg" className=" cursor-pointer"
+            xmlns="http://www.w3.org/2000/svg"
+            className=" cursor-pointer"
           >
             <path
               fill-rule="evenodd"
