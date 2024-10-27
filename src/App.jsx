@@ -4,6 +4,9 @@ import Home from "./pages/Home";
 import DetailsPage from "./pages/DetailsPage";
 import PageNotFound from "./pages/PageNotFound";
 import FoodsProvider from "./context/FoodsContext";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import Blogs from "./pages/Blogs";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Route path="/foods" element={<FoodsPage />} />
         <Route path="/foods/:id" element={<DetailsPage />} />
         <Route path="/*" element={<PageNotFound />} />
+        <Route path="/about" element={<AboutUs/>}/>
+        <Route path="/contact" element={<ContactUs/>}/>
+        <Route path="/blogs" element={<Blogs/>}/>
       </Routes>
     </FoodsProvider>
   );

@@ -19,16 +19,7 @@ function Categories() {
 
   const [categoryList, setCategorylist] = useState([]);
   const [category, setCategory] = useState("");
-  // const categoryHandler=(event)=>{
-  //     console.log("category clicked");
-  //     const {tagName} = event.target;
-  //     console.log(event.target);
-  //     if(tagName !== 'LI') return;
-
-  // }
-  document.body.addEventListener("click", () => {
-    setCategory("");
-  });
+  
   useEffect(() => {
     if (category === "breakfast") {
       setCategorylist(breakfastCategory);
@@ -44,17 +35,13 @@ function Categories() {
   }, [category]);
   const breakfastHandler = (e) => {
     setCategory("breakfast");
-    // console.log(foods[2].details[1]["Recipe Type"]);
-    console.log(category);
   };
   const veganHandler = (e) => {
     setCategory("vegan");
-    console.log(category);
   };
-  console.log(categoryList);
 
-  const showCategory = () => {
-    console.log(category);
+  const categoryHandler = (e) => {
+    console.log(e.target);
   };
   return (
     <div className=" w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-24 mb-24">
@@ -102,7 +89,10 @@ function Categories() {
                 <div className=' text-lg font-semibold mb-8'>Chocolate</div>
             </div>
       </div> */}
-      <ul className=" flex items-center justify-between gap-x-8">
+      <ul
+        onClick={categoryHandler}
+        className=" flex items-center justify-between gap-x-8"
+      >
         <li
           onClick={breakfastHandler}
           className="flex flex-col justify-between items-center w-[180px] h-[203px] bg-gradient-to-t from-yellow-50 to-transparent rounded-[30px]"
