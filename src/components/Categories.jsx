@@ -44,8 +44,8 @@ function Categories() {
     console.log(e.target);
   };
   return (
-    <div className=" w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-24 mb-24">
-      <div className=" flex items-center justify-between mb-20 ">
+    <div className=" w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto md:px-24 mb-24">
+      <div className=" w-full flex items-center justify-between mb-20 ">
         <div className=" text-[48px] font-semibold">Categories</div>
         <div className=" text-base font-semibold bg-sky-100 rounded-2xl w-52 h-14 flex items-center justify-center cursor-pointer">
           View All Categories
@@ -91,7 +91,7 @@ function Categories() {
       </div> */}
       <ul
         onClick={categoryHandler}
-        className=" flex items-center justify-between gap-x-8"
+        className=" w-full flex items-center justify-between gap-x-8"
       >
         <li
           onClick={breakfastHandler}

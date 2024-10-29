@@ -90,7 +90,7 @@ function Banner() {
         <div className=" w-1/2">
           <img src={banner} alt="banner-image" className=" w-full h-full" />
         </div>
-        <img src={bage} alt="badge-logo" className=" absolute top-10 left-1/2-[40px]" />
+        <img src={bage} alt="badge-logo" className="absolute top-10 left-1/2-[40px]" />
       </div>
       <div className=" w-10 h-[600px] bg-sky-100 rounded-l-3xl"></div>
     </div>

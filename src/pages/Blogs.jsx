@@ -1,8 +1,11 @@
 import React from 'react'
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
+import { useEffect } from "react";
 function Blogs() {
+  useEffect(()=>{
+    window.scroll(0,0);
+  },[]);
     return (
         <>
         <Navbar/>

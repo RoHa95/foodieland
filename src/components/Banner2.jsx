@@ -15,7 +15,7 @@ function Banner2() {
         <div className=" bg-black cursor-pointer text-white rounded-2xl w-[180px] h-[60px] flex items-center justify-center">Learn More</div>
       </div>
       <div className=" w-1/2">
-      <img src={banner2} alt="banner2" className=" w-full" /></div>
+      <img src={banner2} alt="banner2" className="hidden md:block w-full" /></div>
     </div>
   );
 }

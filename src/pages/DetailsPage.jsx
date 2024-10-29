@@ -5,9 +5,13 @@ import Footer from "../components/Footer";
 
 // loader
 import { Bars } from "react-loader-spinner";
+import { useEffect } from "react";
 
 function DetailsPage() {
   
+  useEffect(()=>{
+    window.scroll(0,0);
+  },[]);
   const { id } = useParams();
   const data = useFoodDetails(+id);
    console.log(id);

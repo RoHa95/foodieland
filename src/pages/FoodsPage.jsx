@@ -5,10 +5,12 @@ import { useFoods } from "../context/FoodsContext";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
-
+import { useEffect } from "react";
 function FoodsPage() {
   const foods = useFoods();
-
+  useEffect(()=>{
+    window.scroll(0,0);
+  },[]);
   return (
     <>
       <Navbar />

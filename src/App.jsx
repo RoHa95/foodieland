@@ -16,10 +16,10 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/foods" element={<FoodsPage />} />
         <Route path="/foods/:id" element={<DetailsPage />} />
-        <Route path="/*" element={<PageNotFound />} />
         <Route path="/about" element={<AboutUs/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
         <Route path="/blogs" element={<Blogs/>}/>
+        <Route path="/*" element={<PageNotFound />} />
       </Routes>
     </FoodsProvider>
   );
