@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import brakfast from "../assets/images/breakfast.png";
-import vegan from "../assets/images/vegan.png";
+
 import meet from "../assets/images/meet.png";
 import dessert from "../assets/images/dessert.png";
 import lunch from "../assets/images/lunch.png";
@@ -108,7 +108,7 @@ function Categories() {
           className=" flex flex-col justify-between items-center w-28 cursor-pointer h-40 md:w-[180px] md:h-[203px] bg-gradient-to-t from-green-50 to-transparent rounded-[30px]"
         >
           <div>
-            <img src={vegan} alt="Vegan" />
+            <img src="https://s32.picofile.com/file/8480209168/Vegan.png" alt="Vegan" />
           </div>
           <div className=" text-lg font-semibold mb-2 md:mb-8">Vegan</div>
         </li>
