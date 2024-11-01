@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 function Footer() {
   return (
-    <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-24">
+    <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-10 md:px-24">
       <div className="flex items-center justify-between border border-x-0 border-t-0 border-b-gray-400 border-opacity-30 py-8">
         <div>
           <div className=" flex flex-col justify-between mb-4">
@@ -26,10 +26,10 @@ function Footer() {
           <div>Lorem ipsum dolor sit amet, consectetuipisicing elit, </div>
         </div>
         <div>
-          <ul className="flex gap-x-10 font-medium text-base">
+          <ul className="flex flex-col sm:flex-row text-right sm:gap-x-5 md:gap-x-10 font-medium text-base">
             <li>
               <Link
-                className="text-black  hover:text-sky-500 cursor-pointer"
+                className="text-black  hover:text-sky-500 cursor-pointer text-sm"
                 to="/about"
               >
                 About us
@@ -37,7 +37,7 @@ function Footer() {
             </li>
             <li>
               <Link
-                className="text-black  hover:text-sky-500 cursor-pointer"
+                className="text-black  hover:text-sky-500 cursor-pointer text-sm"
                 to="/contact"
               >
                 Contact
@@ -45,7 +45,7 @@ function Footer() {
             </li>
             <li>
               <Link
-                className=" text-black hover:text-sky-500 cursor-pointer"
+                className=" text-black hover:text-sky-500 cursor-pointer text-sm"
                 to="/blogs"
               >
                 Blog
@@ -53,7 +53,7 @@ function Footer() {
             </li>
             <li>
               <Link
-                className=" text-black hover:text-sky-500 cursor-pointer"
+                className=" text-black hover:text-sky-500 cursor-pointer text-sm"
                 to="/foods"
               >
                 Recipes
