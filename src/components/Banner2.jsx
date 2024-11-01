@@ -1,5 +1,5 @@
 import React from "react";
-import banner2 from "../assets/images/sheff.png";
+
 
 function Banner2() {
   return (

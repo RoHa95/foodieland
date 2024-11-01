@@ -1,8 +1,5 @@
 import React from "react";
-import post1 from "../assets/images/post.png";
-import post2 from "../assets/images/post1.png";
-import post3 from "../assets/images/post2.png";
-import post4 from "../assets/images/post3.png";
+
 function Instagram() {
   return (
     <div className="w-full flex flex-col items-center container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-10 md:px-24 mb-24 bg-gradient-to-t from-sky-100 to-transparent">

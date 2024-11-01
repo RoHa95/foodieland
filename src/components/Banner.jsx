@@ -1,8 +1,4 @@
 import React from "react";
-import banner from "../assets/images/banner.png";
-import recepieicon from "../assets/images/recepie-icon.png";
-import person from "../assets/images/ellipse2.png";
-import bage from "../assets/images/badge.png";
 function Banner() {
   return (
     <div className=" w-full flex justify-between items-center gap-x-10">

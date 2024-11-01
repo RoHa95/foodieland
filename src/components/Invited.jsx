@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../assets/images/invited.png";
+
 
 function Invited() {
   return (

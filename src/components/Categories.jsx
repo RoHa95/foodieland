@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from "react";
-import brakfast from "../assets/images/breakfast.png";
-
-import meet from "../assets/images/meet.png";
-import dessert from "../assets/images/dessert.png";
-import lunch from "../assets/images/lunch.png";
-import chocolate from "../assets/images/chocolate.png";
 import { useCategoryList, useFoods } from "../context/FoodsContext";
-import Navbar from "./Navbar";
-import Card2 from "./Card2";
+
 import Card from "./Card";
 
 function Categories() {

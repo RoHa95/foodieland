@@ -5,9 +5,6 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
 // components
 import Card from "./Card";
 
-// images
-import ads from "../assets/images/Ads.png";
-
 // loader
 import { Bars } from "react-loader-spinner";
 

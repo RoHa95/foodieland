@@ -1,6 +1,5 @@
 import React from "react";
 import { useFoods } from "../context/FoodsContext";
-import Card from "./Card";
 import Card2 from "./Card2";
 
 // loader
