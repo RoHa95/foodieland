@@ -14,22 +14,16 @@ function DetailsPage() {
   },[]);
   const { id } = useParams();
   const data = useFoodDetails(+id);
-   console.log(id);
-  // const { name, image, details, price, introduction, ingredients, recipe } =
-  //   data;
-
-  // useEffect(() => {
-  //   setfoods(useFoods());
-  // }, []);
+  
  if(!data) return (
  <div className=" w-full h-full flex justify-center items-center"><Bars/></div>)
   return (
     <>
       <Navbar />
-        <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-24 py-6">
-          <div className=" w-full flex items-center justify-between border border-x-0 border-t-0 border-b-2 pb-8">
-            <img src={data.image} className=" w-2/3 h-auto" />
-            <div className=" w-1/3 flex flex-col justify-start px-10">
+        <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-10 md:px-24 py-6">
+          <div className=" w-full flex flex-col lg:flex-row items-center justify-between border border-x-0 border-t-0 border-b-2 pb-8">
+            <img src={data.image} className=" w-full lg:w-2/3 h-auto" />
+            <div className=" w-full lg:w-1/3 flex flex-col justify-start px-10">
               <h1 className=" font-bold text-[40px]">{data.name}</h1>
               <p className=" text-sm text-gray-500 font-medium text-justify mt-4">
                 {data.introduction}

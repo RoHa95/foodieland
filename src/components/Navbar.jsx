@@ -5,6 +5,7 @@ function Navbar() {
   return (
     <div className="w-full container mx-auto 2xl:max-w-7xl 2xl:mx-auto flex items-center justify-between py-3 md:py-7 px-10 md:pl-24 md:px-24 border border-x-0 border-t-0 border-black border-opacity-10">
       <div className=" flex items-center justify-between">
+        <Link to="/home">
         <svg
           width="108"
           height="19"
@@ -21,6 +22,8 @@ function Navbar() {
             fill="#FF7426"
           />
         </svg>
+        </Link>
+        
       </div>
       <div className="hidden lg:block">
         <ul className=" flex items-center justify-between gap-x-14 text-base font-medium">
