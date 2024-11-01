@@ -14,7 +14,7 @@ function FoodsPage() {
   return (
     <>
       <Navbar />
-      <div className="w-full container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-24 py-14 grid grid-cols-3 gap-x-6 gap-y-8">
+      <div className="w-full container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-2 md:px-24 py-14 grid grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
         {foods.map((item) => (
           <Card data={item} />
         ))}
