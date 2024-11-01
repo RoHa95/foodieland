@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="w-full container mx-auto 2xl:max-w-7xl 2xl:mx-auto flex items-center justify-between md:py-7 md:pl-24 md:px-24 border border-x-0 border-t-0 border-black border-opacity-10">
+    <div className="w-full container mx-auto 2xl:max-w-7xl 2xl:mx-auto flex items-center justify-between py-3 md:py-7 px-10 md:pl-24 md:px-24 border border-x-0 border-t-0 border-black border-opacity-10">
       <div className=" flex items-center justify-between">
         <svg
           width="108"
@@ -31,7 +31,7 @@ function Navbar() {
           <li><Link className=" text-black" to="/home">Home</Link></li>
         </ul>
       </div>
-      <div className=" flex items-center justify-between gap-x-8">
+      <div className=" flex items-center justify-between gap-x-4 md:gap-x-8">
         <svg
           width="23"
           height="22"
