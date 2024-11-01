@@ -12,7 +12,7 @@ function Banner() {
           <div>
             <div className=" flex items-center justify-center w-fit px-4 py-2 m-8 bg-white rounded-3xl gap-x-3">
               <div>
-                <img src={recepieicon} alt="recepieicon" />
+                <img src="https://s32.picofile.com/file/8480209142/recepie_icon.png" alt="recepieicon" />
               </div>
               <span className=" font-semibold text-sm">Hot Recipes</span>
             </div>
@@ -73,7 +73,7 @@ function Banner() {
           <div className=" flex items-center justify-between w-full md:mt-1 lg:m-12 mb-5">
             <div className=" flex items-center gap-x-3 ml-8">
               <div>
-                <img src={person} alt="person" />
+                <img src="https://s32.picofile.com/file/8480209050/ellipse2.png" alt="person" />
               </div>
               <div className=" flex flex-col">
                 <div className=" font-bold text-sm lg:text-base">John Smith</div>
@@ -104,10 +104,10 @@ function Banner() {
           </div>
         </div>
         <div className=" w-full  md:w-1/2">
-          <img src={banner} alt="banner-image" className=" w-full h-full" />
+          <img src="https://s32.picofile.com/file/8480208992/banner.png" alt="banner-image" className=" w-full h-full" />
         </div>
         <img
-          src={bage}
+          src="https://s32.picofile.com/file/8480208984/Badge.png"
           alt="badge-logo"
           className=" hidden md:block absolute top-10 left-1/2-[40px]"
         />

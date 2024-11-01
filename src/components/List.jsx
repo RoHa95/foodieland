@@ -36,7 +36,7 @@ function List() {
           first.map((item) => <Card key={item.id} data={item} />)
         )}
         <div>
-          <img src={ads} alt="ads" className=" pt-4 w-full h-full pb-0 lg:max-w-[350px] lg:h-[418px]" />
+          <img src="https://s32.picofile.com/file/8480208976/Ads.png" alt="ads" className=" pt-4 w-full h-full pb-0 lg:max-w-[350px] lg:h-[418px]" />
         </div>
         {last.map((item) => (
           <Card data={item} key={item.id} />

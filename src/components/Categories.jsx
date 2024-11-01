@@ -98,7 +98,7 @@ function Categories() {
           className="flex flex-col justify-between items-center w-28 cursor-pointer h-40 md:w-[180px] md:h-[203px] bg-gradient-to-t from-yellow-50 to-transparent rounded-[30px]"
         >
           <div>
-            <img src={brakfast} alt="breakfast" />
+            <img src="https://s32.picofile.com/file/8480209000/breakfast.png" alt="breakfast" />
           </div>
           <div className=" text-lg font-semibold mb-2 md:mb-8">Breakfast</div>
         </li>
@@ -117,7 +117,7 @@ function Categories() {
           className=" flex flex-col justify-between items-center w-28 cursor-pointer h-40 md:w-[180px] md:h-[203px] bg-gradient-to-t from-red-50 to-transparent rounded-[30px]"
         >
           <div>
-            <img src={meet} alt="Meet" />
+            <img src="https://s32.picofile.com/file/8480209084/meet.png" alt="Meet" />
           </div>
           <div className=" text-lg font-semibold mb-2 md:mb-8">Meet</div>
         </li>
@@ -126,7 +126,7 @@ function Categories() {
           className=" flex flex-col justify-between items-center w-28 cursor-pointer h-40 md:w-[180px] md:h-[203px] bg-gradient-to-t from-yellow-50 to-transparent rounded-[30px]"
         >
           <div>
-            <img src={dessert} alt="Dessert" />
+            <img src="https://s32.picofile.com/file/8480209042/dessert.png" alt="Dessert" />
           </div>
           <div className=" text-lg font-semibold mb-2 md:mb-8">Dessert</div>
         </li>
@@ -135,7 +135,7 @@ function Categories() {
           className=" flex flex-col justify-between items-center w-28 cursor-pointer h-40 md:w-[180px] md:h-[203px] bg-gradient-to-t from-gray-100 to-transparent rounded-[30px]"
         >
           <div>
-            <img src={lunch} alt="Dessert" />
+            <img src="https://s32.picofile.com/file/8480209076/lunch.png" alt="Dessert" />
           </div>
           <div className=" text-lg font-semibold mb-2 md:mb-8">Lunch</div>
         </li>

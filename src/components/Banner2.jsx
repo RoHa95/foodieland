@@ -15,7 +15,7 @@ function Banner2() {
         <div className=" bg-black cursor-pointer text-white rounded-2xl w-36 h-10 lg:w-[180px] lg:h-[60px] flex items-center justify-center">Learn More</div>
       </div>
       <div className=" w-full lg:w-1/2">
-      <img src={banner2} alt="banner2" className=" lg:block w-full" /></div>
+      <img src="https://s32.picofile.com/file/8480209150/sheff.png" alt="banner2" className=" lg:block w-full" /></div>
     </div>
   );
 }

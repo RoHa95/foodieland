@@ -16,10 +16,10 @@ function Instagram() {
         </p>
       </div>
       <div className=" w-full grid grid-cols-4 gap-x-5 gap-y-8">
-        <img src={post1} alt="post1" />
-        <img src={post2} alt="post1" />
-        <img src={post3} alt="post1" />
-        <img src={post4} alt="post1" />
+        <img src="https://s32.picofile.com/file/8480209118/post1.png" alt="post1" />
+        <img src="https://s32.picofile.com/file/8480209126/post2.png" alt="post1" />
+        <img src="https://s32.picofile.com/file/8480209134/post3.png" alt="post1" />
+        <img src="https://s32.picofile.com/file/8480209100/post.png" alt="post1" />
       </div>
       <div className=" flex items-center justify-center gap-x-2 w-[230px] h-[60px] bg-black text-white rounded-2xl my-20">
         <div>Visit Our Instagram</div>
