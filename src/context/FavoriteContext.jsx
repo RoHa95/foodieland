@@ -1,11 +1,10 @@
-import React, { createContext, useContext, useState } from 'react'
+import React, { createContext, useState } from 'react'
 
 export const FavoriteContext = createContext();
 
 function FavoriteProvider({children}) {
   
     const[favorite, setFavorite] = useState([]);
-    
   return (
     <FavoriteContext.Provider value={{favorite, setFavorite}}>{children}</FavoriteContext.Provider>
   )

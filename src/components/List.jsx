@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useFoods } from "../context/FoodsContext";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 // components
 import Card from "./Card";
@@ -18,7 +18,9 @@ function List() {
   return (
     <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-10 md:px-24 mb-24">
       <div className=" w-full flex flex-col items-center justify-center gap-y-6 mb-24">
-        <h3 className=" text-3xl md:text-[48px] font-semibold">Simple and tasty recipes</h3>
+        <h3 className=" text-3xl md:text-[48px] font-semibold">
+          Simple and tasty recipes
+        </h3>
         <p className=" font-normal text-base text-opacity-60 md:w-[706px] text-center">
           Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqut enim ad minim{" "}
@@ -33,7 +35,11 @@ function List() {
           first.map((item) => <Card key={item.id} data={item} />)
         )}
         <div>
-          <img src="https://s32.picofile.com/file/8480208976/Ads.png" alt="ads" className=" pt-4 w-full h-full pb-0 lg:max-w-[350px] lg:h-[418px]" />
+          <img
+            src="https://s32.picofile.com/file/8480208976/Ads.png"
+            alt="ads"
+            className=" pt-4 w-full h-full pb-0 lg:max-w-[350px] lg:h-[418px]"
+          />
         </div>
         {last.map((item) => (
           <Card data={item} key={item.id} />
