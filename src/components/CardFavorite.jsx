@@ -1,20 +1,25 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
 import { FavoriteContext } from "../context/FavoriteContext";
 import { useFoods } from "../context/FoodsContext";
 
-function Card({ data }) {
+function CardFavorite({ data }) {
   const { id, name, image, details } = data;
-  const { favorite, setFavorite } = useContext(FavoriteContext);
-  const[like, setLike] = useState(false);
   const navigate = useNavigate();
-  const likeHandler = (e) => {
-    e.stopPropagation();
+  const [like, setLike] = useState(false);
+  const { favorite, setFavorite } = useContext(FavoriteContext);
+const foods = useFoods();
+  const handelLikeList = (e) => {
+    const recipe = e.currentTarget.dataset.id;
+    const result = favorite.filter(item=> item.id !== +recipe)
+    console.log(result);
+    
     setLike(!like);
-    setFavorite((favorite) => [...favorite, data]);
-    console.log(favorite);
+    e.stopPropagation();
+    console.log(e.currentTarget.dataset.id);
+    setFavorite((favorite) => result);
   };
-
   return (
     <div
       onClick={() => {
@@ -27,21 +32,21 @@ function Card({ data }) {
         alt="image1"
         className=" w-[368px] h-[250px] rounded-[30px] "
       />
-      <p className=" pl-2 text-2xl font-semibold">{name}</p>
       <div
         className=" absolute flex items-center justify-center top-6 right-8 rounded-full bg-white w-8 h-8 lg:w-12 lg:h-12"
         data-id={id}
-        onClick={likeHandler}
+        onClick={handelLikeList}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          fill={like?"#FF0000":"#ddd"}
+          fill={"#FF0000"}
           className=" w-4 h-4 lg:w-6 lg:h-6"
         >
           <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
         </svg>
       </div>
+      <p className=" pl-2 text-2xl font-semibold">{name}</p>
 
       <div className=" pl-2 flex gap-x-8 mb-5">
         <div className=" flex items-center gap-x-2">
@@ -87,4 +92,4 @@ function Card({ data }) {
   );
 }
 
-export default Card;
+export default CardFavorite;
