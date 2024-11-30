@@ -84,7 +84,7 @@ function Categories() {
       </div> */}
       <ul
         onClick={categoryHandler}
-        className=" w-full grid grid-cols-3 md:flex items-center justify-between md:gap-x-8"
+        className=" w-full grid grid-cols-3 gx md:flex items-center justify-between gap-x-8"
       >
         <li
           onClick={breakfastHandler}

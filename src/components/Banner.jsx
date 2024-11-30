@@ -72,14 +72,14 @@ function Banner() {
                 <img src="https://s32.picofile.com/file/8480209050/ellipse2.png" alt="person" />
               </div>
               <div className=" flex flex-col">
-                <div className=" font-bold text-sm lg:text-base">John Smith</div>
-                <div className=" text-xs lg:text-sm font-medium text-opacity-30">
+                <div className=" font-bold text-[10px] sm:text-sm lg:text-base">John Smith</div>
+                <div className="text-[10px] sm:text-xs lg:text-sm font-medium text-opacity-30">
                   15 March 2022
                 </div>
               </div>
             </div>
             <div className=" flex items-center justify-center bg-black rounded-2xl w-28 h-10 lg:w-48 lg:h-14 gap-x-1 lg:gap-x-3 mr-8 cursor-pointer">
-              <div className=" text-white text-xs md:text-[10px] lg:text-sm font-semibold">
+              <div className=" text-white text-xs ml-2 sm:ml-0 md:text-[10px] lg:text-sm font-semibold">
                 View Recipes
               </div>
               <div>

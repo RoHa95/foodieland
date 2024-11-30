@@ -16,7 +16,7 @@ function List() {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-10 md:px-24 mb-24">
+    <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-3 sm:px-10 md:px-24 mb-24">
       <div className=" w-full flex flex-col items-center justify-center gap-y-6 mb-24">
         <h3 className=" text-3xl md:text-[48px] font-semibold">
           Simple and tasty recipes

@@ -5,6 +5,7 @@ function Footer() {
     <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-10 md:px-24">
       <div className="flex items-center justify-between border border-x-0 border-t-0 border-b-gray-400 border-opacity-30 py-8">
         <div>
+          <Link to="/home">
           <div className=" flex flex-col justify-between mb-4">
             <svg
               width="108"
@@ -23,6 +24,8 @@ function Footer() {
               />
             </svg>
           </div>
+          </Link>
+         
           <div>Lorem ipsum dolor sit amet, consectetuipisicing elit, </div>
         </div>
         <div>

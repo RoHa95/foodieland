@@ -26,14 +26,14 @@ function Card({ data }) {
       onClick={() => {
         navigate(`/foods/${id}`);
       }}
-      className=" flex relative flex-col justify-between max-w-[400px] h-[404px] bg-gradient-to-t from-sky-100 to-transparent rounded-[30px] p-4 overflow-hidden cursor-pointer"
+      className=" flex relative flex-col justify-between sm:max-w-[400px] sm:h-[404px] bg-gradient-to-t from-sky-100 to-transparent rounded-[30px] p-4 overflow-hidden cursor-pointer"
     >
       <img
         src={image}
         alt="image1"
         className=" w-[368px] h-[250px] rounded-[30px] "
       />
-      <p className=" pl-2 text-2xl font-semibold">{name}</p>
+      <p className=" pl-2 text-base sm:text-2xl font-semibold">{name}</p>
       <div
         className=" absolute flex items-center justify-center top-6 right-8 rounded-full bg-white w-8 h-8 lg:w-12 lg:h-12"
         data-id={id}
@@ -49,8 +49,8 @@ function Card({ data }) {
         </svg>
       </div>
 
-      <div className=" pl-2 flex gap-x-8 mb-5">
-        <div className=" flex items-center gap-x-2">
+      <div className=" pl-2 flex flex-col sm:flex-row mt-1 sm:mt-0 sm:gap-x-8 mb-3 sm:mb-5">
+        <div className=" flex  items-center gap-x-2">
           <svg
             width="24"
             height="24"
@@ -67,7 +67,7 @@ function Card({ data }) {
               fill="black"
             />
           </svg>
-          <span>{details[3]["Preparation Time"]}</span>
+          <span className="text-sm sm:text-base">{details[3]["Preparation Time"]}</span>
         </div>
         <div className=" flex items-center gap-x-2">
           <svg
@@ -86,7 +86,7 @@ function Card({ data }) {
               fill="black"
             />
           </svg>
-          <span>{details[1]["Recipe Type"]}</span>
+          <span className="text-sm sm:text-base">{details[1]["Recipe Type"]}</span>
         </div>
       </div>
     </div>

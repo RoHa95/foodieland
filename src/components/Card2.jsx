@@ -7,11 +7,11 @@ function Card2({data}) {
     const navigate = useNavigate();
      return (
        
-       <div onClick={()=>{ navigate(`/foods/${id}`)}} className=" flex flex-col justify-between max-w-[290px] h-[316px] bg-transparent rounded-[30px] p-4 overflow-hidden cursor-pointer">
+       <div onClick={()=>{ navigate(`/foods/${id}`)}} className=" flex flex-col justify-between sm:max-w-[290px] sm:h-[316px] bg-transparent rounded-[30px] p-4 overflow-hidden cursor-pointer">
          <img src={image} alt="image1" className=" w-[290px] h-[200px] rounded-[30px] "/>
          <p className=" pl-2 text-lg font-semibold">{name}</p>
          
-         <div className=" pl-2 flex gap-x-8 mb-5">
+         <div className=" mt-1 sm:mt-0 pl-2 flex flex-col sm:flex-row gap-x-4 sm:gap-x-8 mb-5">
            <div className=" flex items-center gap-x-2">
              <svg
                width="24"
@@ -29,7 +29,7 @@ function Card2({data}) {
                  fill="black"
                />
              </svg>
-             <span>{details[3]["Preparation Time"]}</span>
+             <span className='text-sm'>{details[3]["Preparation Time"]}</span>
            </div>
            <div className=" flex items-center gap-x-2">
              <svg
@@ -48,7 +48,7 @@ function Card2({data}) {
                  fill="black"
                />
              </svg>
-             <span>{details[1]["Recipe Type"]}</span>
+             <span  className='text-sm'>{details[1]["Recipe Type"]}</span>
            </div>
          </div>
        </div>
