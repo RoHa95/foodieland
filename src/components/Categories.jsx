@@ -37,7 +37,7 @@ function Categories() {
     console.log(e.target);
   };
   return (
-    <div className=" w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-10 md:px-24 mb-24">
+    <div className=" w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-3 sm:px-10 md:px-24 mb-24">
       <div className=" w-full flex items-center justify-between mb-20 ">
         <div className=" text-2xl md:text-[48px] font-semibold">Categories</div>
         <div className=" text-sm md:text-base font-semibold bg-sky-100 rounded-2xl w-36 md:w-52 h-12 md:h-14 flex items-center justify-center cursor-pointer">
