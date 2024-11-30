@@ -4,7 +4,7 @@ function Instagram() {
   return (
     <div className="w-full flex flex-col items-center container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-10 md:px-24 mb-24 bg-gradient-to-t from-sky-100 to-transparent">
       <div className=" w-full flex flex-col items-center justify-center gap-y-6 mb-24 px-2 lg:px-0">
-        <h3 className=" text-xl md:text-3xl lg:text-[48px] lg:leading-[54px] font-semibold">
+        <h3 className=" text-xl text-center md:text-3xl lg:text-[48px] lg:leading-[54px] font-semibold">
           Check out @foodieland on Instagram
         </h3>
         <p className=" w-full font-normal text-sm lg:text-base text-opacity-60 lg:w-[706px] text-center px-2 lg:px-0">
