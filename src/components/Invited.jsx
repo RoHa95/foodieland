@@ -3,7 +3,7 @@ import React from "react";
 
 function Invited() {
   return (
-    <div className=" relative lg:h-[442px] w-full container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-10 md:px-24 flex justify-center items-center gap-x-6 xl:gap-x-10 mb-20 md:mb-32">
+    <div className=" relative lg:h-[442px] w-full container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-10 md:px-24 flex justify-center items-center gap-x-6 xl:gap-x-10 mb-0 sm:mb-20 md:mb-0">
       <img
         src="https://s32.picofile.com/file/8480209068/invited.png"
         alt="background"

@@ -13,7 +13,7 @@ function List2() {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-3 sm:px-10 md:px-24 mb-24">
+    <div className="w-full flex flex-col container mx-auto 2xl:max-w-7xl 2xl:mx-auto px-3 sm:px-10 md:px-24 mb-14">
       <div className=" flex flex-col md:flex-row items-center justify-between w-full mb-20">
         <div className=" w-full md:w-1/2 text-3xl lg:text-[48px] lg:leading-[56px] font-semibold">
           Try this delicious recipe to make your day
