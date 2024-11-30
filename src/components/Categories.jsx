@@ -133,7 +133,7 @@ function Categories() {
           <div className=" text-lg font-semibold mb-2 md:mb-8">Lunch</div>
         </li>
       </ul>
-      <div className=" w-full rounded-3xl py-4 mt-4 gap-2 lg:gap-8 grid grid-cols-2 lg:grid-cols-3">
+      <div className=" w-full rounded-3xl sm:py-4 mt-4 gap-2 lg:gap-8 grid grid-cols-2 lg:grid-cols-3">
         {categoryList.map((item) => (
           <Card data={item} />
         ))}
