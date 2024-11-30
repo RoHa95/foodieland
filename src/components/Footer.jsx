@@ -68,8 +68,8 @@ function Footer() {
       <div className=" w-full flex items-center justify-between">
         <div></div>
         <div className=" text-center py-8">
-          © 2020 Flowbase. Powered by
-          <span className=" text-orange-500 pl-2">Webflow</span>
+          © 2024 Flowbase. Powered by
+          <span className=" text-orange-500 pl-2">Roqhaye Halimi</span>
         </div>
 
         <div className="flex items-center gap-x-6">
